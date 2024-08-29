@@ -3,7 +3,7 @@
 ## Description
 This project architecture is designed to automate the process of fetching weather data, processing it, and loading it into a Snowflake database for further analysis. Here's a step-by-step breakdown of the workflow:
 
-![Block Diagram Image](assets/block1.pngs)
+![Block Diagram Image](assets/block1.png)
 
 1. **AWS Lambda Trigger**: 
    - Every hour, an AWS Lambda function is triggered to fetch the latest weather data from a weather API.
@@ -29,7 +29,6 @@ This project architecture is designed to automate the process of fetching weathe
 This automated pipeline ensures that weather data is continuously updated and readily available for analysis in Snowflake.
 
 ## Architecture Diagram
-![Weather Data Pipeline Architecture](images/weather_data_pipeline_architecture.png)
 
 1. **Weather API**: An external source where weather data is fetched from.
 2. **AWS Lambda (Trigger Every Hour)**: Connected to the Weather API, triggering every hour.
